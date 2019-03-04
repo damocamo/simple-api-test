@@ -55,19 +55,8 @@ describe('Simple Test', function () {
 
     });
 
-    it('should have lon and lat of 144.93464, -37.839517', function (done) {
-        api.get(`/nearest_city?key=${key}`)
-            .set('Accept', 'application/json')
-            .expect(200)
-            .end(function (err, res) {
-                let myCords = [144.93464, -37.839517]
-                expect(_.isEqual(res.body.data.location.coordinates, myCords)).to.equal(true)
-                done();
-            });
 
-    });
-
-    it('should have lon and lat of 144.93464, -37.839517', function (done) {
+    it('should have contain the correct json format', function (done) {
         api.get(`/nearest_city?key=${key}`)
             .set('Accept', 'application/json')
             .expect(200)
