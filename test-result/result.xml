@@ -1,0 +1,16 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="Simple Test" tests="6" errors="0" failures="0" skipped="0" timestamp="2019-03-04T02:56:12" time="2.572">
+    <testcase classname="Simple Test" name="should return a 200 response" time="0.522">
+    </testcase>
+    <testcase classname="Simple Test" name="should return a 403 response" time="0.4">
+    </testcase>
+    <testcase classname="Simple Test" name="should be an object with keys and values" time="0.385">
+    </testcase>
+    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.414">
+    </testcase>
+    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.43">
+    </testcase>
+    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.416">
+    </testcase>
+  </testsuite>
+</testsuites>
