@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Api') {
       steps {
-        sh '''sh run.sh run
+        sh '''ls
+sh run.sh run
 '''
       }
     }
