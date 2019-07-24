@@ -6,5 +6,11 @@ pipeline {
         sleep 1
       }
     }
+    stage('Api') {
+      steps {
+        sh '''sh run.sh run
+'''
+      }
+    }
   }
 }
