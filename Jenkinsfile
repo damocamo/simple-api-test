@@ -9,6 +9,7 @@ pipeline {
     stage('Api') {
       steps {
         sh '''ls
+cd script
 sh run.sh run
 '''
       }
