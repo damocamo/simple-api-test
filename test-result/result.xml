@@ -1,16 +1,27 @@
 <testsuites name="Mocha Tests">
-  <testsuite name="Simple Test" tests="6" errors="0" failures="0" skipped="0" timestamp="2019-03-04T03:27:02" time="2.558">
-    <testcase classname="Simple Test" name="should return a 200 response" time="0.474">
+  <testsuite name="Simple Test" tests="5" errors="0" failures="1" skipped="0" timestamp="2019-09-17T06:32:16" time="1.583">
+    <testcase classname="Simple Test" name="should return a 200 response" time="0.348">
     </testcase>
-    <testcase classname="Simple Test" name="should return a 403 response" time="0.401">
+    <testcase classname="Simple Test" name="should return a 403 response" time="0.287">
     </testcase>
-    <testcase classname="Simple Test" name="should be an object with keys and values" time="0.414">
+    <testcase classname="Simple Test" name="should be an object with keys and values" time="0.302">
     </testcase>
-    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.401">
+    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0">
+      <failure message="expected false to equal true">+true
+-false
+
+    at Test.&lt;anonymous&gt; (test/firsttest.js:54:83)
+    at Test.assert (node_modules/supertest/lib/test.js:181:6)
+    at localAssert (node_modules/supertest/lib/test.js:131:12)
+    at /Users/damiencucuzza/simple-api-test/node_modules/supertest/lib/test.js:128:5
+    at Test.Request.callback (node_modules/superagent/lib/node/index.js:716:12)
+    at parser (node_modules/superagent/lib/node/index.js:916:18)
+    at Stream.res.on (node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at Unzip.unzip.on (node_modules/superagent/lib/node/unzip.js:55:12)
+    at endReadableNT (_stream_readable.js:1132:12)
+    at processTicksAndRejections (internal/process/next_tick.js:76:17)</failure>
     </testcase>
-    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.411">
-    </testcase>
-    <testcase classname="Simple Test" name="should have lon and lat of 144.93464, -37.839517" time="0.452">
+    <testcase classname="Simple Test" name="should have contain the correct json format" time="0.321">
     </testcase>
   </testsuite>
 </testsuites>

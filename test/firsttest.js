@@ -26,6 +26,8 @@ describe('Simple Test', function () {
             .expect(200)
             .end(function (err, res) {
                 let myStates = [{
+                    "state": "ACT"
+                },{
                     "state": 'New South Wales'
                 }, {
                     "state": 'Queensland'
@@ -37,7 +39,7 @@ describe('Simple Test', function () {
                     "state": 'Victoria'
                 }, {
                     "state": 'Western Australia'
-                }]
+                }, ]
                 expect(_.isEqual(res.body.data, myStates)).to.equal(true)
                 done();
             });
@@ -88,5 +90,8 @@ describe('Simple Test', function () {
             });
 
     });
+
+
+
 
 });
